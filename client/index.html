@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Open+Sans" rel="stylesheet">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+
+    <title>Chat App</title>
+  </head>
+  <body>
+    <section id="login">
+      <form onsubmit="login(event)">
+        <input type="text" id="username" placeholder="Username">
+      </form>
+    </section>
+
+    <section class="left-container">
+      <section id="new-conversation">
+        <form onsubmit="newConversation(event)">
+          <input type="text" id="username2" placeholder="New conversation">
+        </form>
+      </section>
+      <section id="conversation-list"></section>
+    </section>
+
+    <section class="right-container">
+      <section id="conversation"></section>
+      <section id="new-message">
+        <form onsubmit="sendMessage(event)">
+          <input type="text" id="message" placeholder="Type a message" disabled>
+        </form>
+      </section>
+    </section>
+
+    <div id="snackbar"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
