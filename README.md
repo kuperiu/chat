@@ -3,6 +3,8 @@ This is a basic chat application with a PHP backend. Users can send messages to
 each other, and they can retrieve the received messages together with author
 name and timestamp.
 
+![app screenshot](./screen.png?raw=true)
+
 ## Getting Started
 The dependencies of this project are PHP, SQLite and a SQLite driver for PHP.
 These can be installed with the following command on a Debian based distro.
