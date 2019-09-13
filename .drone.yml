@@ -1,0 +1,4 @@
+pipeline:
+  clone:
+    image: plugins/git
+    tags: true
