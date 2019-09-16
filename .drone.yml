@@ -1,4 +1,10 @@
-pipeline:
-  clone:
+clone:
+  CLONE REPO:
     image: plugins/git
-    tags: true
+    depth: 1
+
+pipeline:
+  INSTALL DEPENDENCIES:
+    image: node:8.10
+    commands:
+      - npm install
